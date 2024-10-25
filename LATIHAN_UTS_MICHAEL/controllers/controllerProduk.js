@@ -11,9 +11,9 @@ const produkIndex = async (req, res) => {
 
 const produkInsert = async (req, res) => {
     try{
-        const { name, deskripsi, harga, stok, kategori_id } = req.body;
+        const { nama, deskripsi, harga, stok, kategori_id } = req.body;
         const produk = new Produk({
-            name,
+            nama,
             deskripsi,
             harga,
             stok,
