@@ -4,10 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //Load Connection MongoDB
-require('./models/db');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var produksRouter = require('./routes/produks');
+require('./app_server/models/db');
+var indexRouter = require('./app_server/routes/index');
+var usersRouter = require('./app_server/routes/users');
+var produksRouter = require('./app_server/routes/produks');
 
 var app = express();
 
